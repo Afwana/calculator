@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calc.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col1"></div>
+            <div class="col2">
+                <div class="text">
+                    <input type="text" class="form-control" id="result" placeholder="0" readonly>
+                </div>
+                <div class="nums">
+                    <button type="button" class="ms-2 btn btn-light" id="allclear" onclick="calclear()"> AC </button>
+                    <button type="button" class="ms-2 btn btn-light" id="perct" onclick="display('%')"> &#37; </button>
+                    <button type="button" class="ms-2 btn btn-light" id="remove" onclick="remlast()"> &#8656; </button>
+                    <button type="button" class="ms-2 btn btn-light" id="divi" onclick="display('/')"> &#247; </button>
+                    <button type="button" class="ms-2 btn btn-light" id="seven" onclick="display('7')"> 7 </button>
+                    <button type="button" class="ms-2 btn btn-light" id="eight" onclick="display('8')"> 8 </button>
+                    <button type="button" class="ms-2 btn btn-light" id="nine" onclick="display('9')"> 9 </button>
+                    <button type="button" class="ms-2 btn btn-light" id="mult" onclick="display('*')"> &#215; </button>
+                    <button type="button" class="ms-2 btn btn-light" id="four" onclick="display('4')"> 4 </button>
+                    <button type="button" class="ms-2 btn btn-light" id="five" onclick="display('5')"> 5 </button>
+                    <button type="button" class="ms-2 btn btn-light" id="six" onclick="display('6')"> 6 </button>
+                    <button type="button" class="ms-2 btn btn-light" id="minus" onclick="display('-')"> &#8722; </button>
+                    <button type="button" class="ms-2 btn btn-light" id="one" onclick="display('1')"> 1 </button>
+                    <button type="button" class="ms-2 btn btn-light" id="two" onclick="display('2')"> 2 </button>
+                    <button type="button" class="ms-2 btn btn-light" id="three" onclick="display('3')"> 3 </button>
+                    <button type="button" class="ms-2 btn btn-light" id="plus" onclick="display('+')"> &#43; </button>
+                    <button type="button" class="ms-2 btn btn-light" id="dzero" onclick="display('00')"> 00 </button>
+                    <button type="button" class="ms-2 btn btn-light" id="zero" onclick="display('0')"> 0 </button>
+                    <button type="button" class="ms-2 btn btn-light" id="point" onclick="display('.')"> . </button>
+                    <button type="button" class="ms-2 btn btn-light" id="equal" onclick="calc()"> &#61; </button>
+                </div>
+            </div>
+            <div class="col3"></div>
+        </div>
+    </div>
+</body>
+<script src="./calc.js"></script>
+</html>
